@@ -6,7 +6,7 @@ on:
       - main
       
 jobs:
-  workflow-sample:
+  sample:
     runs-on: ubuntu-latest
     container: node:20.10.0-buster-slim
 
