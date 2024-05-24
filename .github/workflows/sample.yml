@@ -1,1 +1,33 @@
+name: Workflow
 
+on: [push]
+      
+jobs:
+  workflow-sample:
+    runs-on: ubuntu-latest
+    container: node:20.10.0-buster-slim
+
+    defaults:
+      run:
+        working-directory: ./
+
+    steps:
+      - name: check out repositry
+      - uses: actions/checkout@v4
+
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: install 
+        run: npm install
+
+      - name: eslint
+        run: npm run lint
+
+      - name: test
+        run: npm run test
+
+      - name: build
+        run: npm run build  
