@@ -1,4 +1,4 @@
-name: Sample
+name: Typescript
 
 on:
   push:
@@ -6,16 +6,15 @@ on:
       - main
       
 jobs:
-  sample:
+  build:
     runs-on: ubuntu-latest
-    container: node:20.10.0-buster-slim
 
     defaults:
       run:
         working-directory: ./
 
     steps:
-      - name: check out repositry
+      - name: checkout repositry
       - uses: actions/checkout@v4
 
       - name: install 
@@ -27,5 +26,4 @@ jobs:
       - name: test
         run: npm run test
 
-      - name: build
-        run: npm run build  
+
