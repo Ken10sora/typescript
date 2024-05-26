@@ -18,10 +18,3 @@ jobs:
 
       - name: Test
         run: npx jest
-      
-      - name: Archive Test Results
-        uses: actions/upload-artifact@v2
-        with:
-          name: test-results
-          path: path/to/test-results
-
