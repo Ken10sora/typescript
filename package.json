@@ -52,5 +52,8 @@
   "dependencies": {
     "playwright": "^1.40.1",
     "setimmediate": "^1.0.5"
+  },
+    "compilerOptions": {
+    "esModuleInterop": true
   }
 }
