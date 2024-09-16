@@ -22,9 +22,9 @@ function regiSet(name: RegiName, numbers: RegiNumbers) {
 
 // 引数に提供する情報のプロパティとキーを設定する
 const regiName: RegiName = {
-  rock: 'Regirock',
-  ice: 'Regice',
-  steel: 'Registeel',
+  rock: 'レジロック',
+  ice: 'レジアイス',
+  steel: 'レジスチル',
 }
 const regiNumbers: RegiNumbers = {
   rock: 377,
